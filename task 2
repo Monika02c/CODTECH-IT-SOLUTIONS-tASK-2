@@ -1,0 +1,45 @@
+//simple calculator
+ 
+import java.util.Scanner;
+class SimpleCalculator
+{
+	public static void main(String ar[])
+	{
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter first number  :");
+	 int a=sc.nextInt();
+	 System.out.println("Enter second number  :");
+
+	 int b=sc.nextInt();
+	 System.out.println("select operation from 1 to 5 :");
+	 int operation=sc.nextInt();
+	 
+	 switch(operation)
+	 {
+	 case 1:
+		System.out.println("addition : "+(a+b));
+		break;
+	case 2:
+		System.out.println("Subtraction :"+(a-b));
+		break;
+	case 3:
+		System.out.println("multiplication :"+(a*b));
+		break;
+	case 4:
+		if(b==0)
+		{
+		System.out.println("invalid operation");
+		}
+		else
+		{
+		System.out.println("division :"+(a/b));
+		}
+		break;
+	default:
+		System.out.println("invalid operation");
+		}
+	}
+}
+		
+	
+	 
